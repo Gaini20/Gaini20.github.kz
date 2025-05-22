@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифрлық зияткер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Цифрлық зияткер</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Курс туралы</a></li>
+                    <li><a href="#courses">Курстар</a></li>
+                    <li><a href="#login">Тіркелу</a></li>
+                    <li><a href="#contact">Көмек</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Курс туралы</h2>
+            <p>Бұл курс 7 сынып оқушыларына арналған, информатика және жаңа ақпараттық технологиялармен танысуға мүмкіндік береді.</p>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div class="container">
+            <h2>Курстар</h2>
+            <div class="course-list">
+                <div class="course">
+                    <h3>Олимпиадаға дайындық</h3>
+                    <p>Codeforces арқылы олимпиада тапсырмаларына дайындық.</p>
+                </div>
+                <div class="course">
+                    <h3>Python бағдарламалау</h3>
+                    <p>Python тілінде бағдарламалау негіздері.</p>
+                </div>
+                <div class="course">
+                    <h3>Scratch бағдарламалау</h3>
+                    <p>Scratch тілінде визуалды бағдарламалау арқылы жобалар жасау.</p>
+                </div>
+                <div class="course">
+                    <h3>AI Арена</h3>
+                    <p>Жасанды интеллект негіздері мен жобалар.</p>
+                </div>
+                <div class="course">
+                    <h3>WebArt Studio</h3>
+                    <p>HTML/CSS арқылы веб-беттер жасау негіздері.</p>
+                </div>
+                <div class="course">
+                    <h3>Креативті кеңістік</h3>
+                    <p>SketchUp бағдарламасында 3D модельдер жасау.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="login">
+        <div class="container">
+            <h2>Тіркелу</h2>
+            <form>
+                <label for="username">Логин:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Құпиясөз:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Тіркелу</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Көмек</h2>
+            <p>Қандай да бір сұрақтарыңыз болса, төмендегі форманы толтырыңыз.</p>
+            <form>
+                <label for="message">Хабарламаңыз:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Жіберу</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Цифрлық зияткер</p>
+        </div>
+    </footer>
+
+</body>
+</html>

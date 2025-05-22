@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Бұл веб-бет тақырыбы </title>
+  </head>
+  <body>
+    <h1> Бұл негізгі тақырып </h1>
+    <p> Бұл мәтіннің бір абзацы. </p>
+  </body>
+</html>
+
+
+<html>
+  <body>
+    <h1>Қош келдіңіз!</h1>
+  </body>
+</html>
+
+<head>
+  <title>  Менің веб-сайтым </title>
+</head>
+
+<body>
+  <h1> Бұл негізгі тақырып </h1>
+  <p> Бұл веб-бетке мысал ретінде алынған параграф. </p>
+</body>
+
+<h1>Бұл басты тақырып</h1>
+<h2>Бұл екінші деңгейдегі тақырып</h2>
+
+<ul>
+  <li> Алма </li>
+  <li> Алмұрт </li>
+</ul>
+
+<ol>
+  <li> Бірінші элемент </li>
+  <li> Екінші элемент </li>
+</ol>
+
+<table border="1">
+  <tr>
+    <td>1</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+</table>
+
+
+<form action="/submit" method="POST">
+  <input type="text" name="username" placeholder="Атыңызды енгізіңіз">
+  <button type="submit">Жіберу</button>
+</form>
+
+
+<h1> Бұл негізгі тақырып </h1>
+<h2> Бұл екінші деңгейдегі тақырып </h2>
+<h3> Бұл үшінші деңгейдегі тақырып </h3>
+<h4> Бұл төртінші деңгейдегі тақырып </h4>
+<h5> Бұл бесінші деңгейдегі тақырып </h5>
+<h6> Бұл алтыншы деңгейдегі тақырып </h6>
+
+
+<ul>
+  <li>Алма</li>
+  <li>Алмұрт</li>
+  <li>Банан</li>
+</ul>
+
+
+<ol>
+  <li>Алғашқы қадам</li>
+  <li>Екінші қадам</li>
+  <li>Үшінші қадам</li>
+</ol>
+
+
+<ul>
+  <li>Тауарлар
+    <ul>
+      <li>Смартфон</li>
+      <li>Ноутбук</li>
+    </ul>
+  </li>
+</ul>
+
+
+<a href="https://www.example.com">
+  <img src="image.jpg" alt="Суретке сілтеме">
+</a>
+
+<table>
+  <tr>
+    <th>Баған 1</th>
+    <th>Баған 2</th>
+    <th>Баған 3</th>
+  </tr>
+  <tr>
+    <td>Мәлімет 1.1</td>
+    <td>Мәлімет 1.2</td>
+    <td>Мәлімет 1.3</td>
+  </tr>
+  <tr>
+    <td>Мәлімет 2.1</td>
+    <td>Мәлімет 2.2</td>
+    <td>Мәлімет 2.3</td>
+  </tr>
+</table>
+
+
+<table border="1">
+  <tr>
+    <th> Аты </th>
+    <th> Жасы </th>
+    <th> Қаласы </th>
+  </tr>
+  <tr>
+    <td> Айдана </td>
+    <td> 25 </td>
+    <td> Алматы </td>
+  </tr>
+  <tr>
+    <td> Болат </td>
+    <td> 30 </td>
+    <td> Астана </td>
+  </tr>
+</table>
+
+
+
+<table style="border: 1px solid black; border-collapse: collapse;">
+</table>
+
+<table border="1">
+  <tr>
+    <th colspan="2"> Жалпы ақпарат </th>
+  </tr>
+  <tr>
+    <td>Айдана</td>
+    <td>25</td>
+  </tr>
+</table>
+
+
+<table border="1">
+  <tr>
+    <th rowspan="2">Аты</th>
+    <th>Жасы</th>
+  </tr>
+  <tr>
+    <td>Айдана</td>
+    <td>25</td>
+  </tr>
+</table>
+
+
+<form action="/submit_form" method="POST">
+  <label for="name"> Аты: </label>
+  <input type="text" id="name" name="username" required>
+  
+  <label for="email"> Электронды пошта: </label>
+  <input type="email" id="email" name="email" required>
+  
+  <button type="submit"> Жіберу </button>
+</form>
+
+
+<form action="/submit_form" method="POST">
+  <label for="name"> Аты: </label>
+  <input type="text" id="name" name="username" required>
+  
+  <label for="email"> Электронды пошта: </label>
+  <input type="email" id="email" name="email" required>
+  
+  <button type="submit"> Жіберу </button>
+</form>
+
+
+<form action="/submit_form" method="POST">
+  <label for="gender"> Жынысыңыз: </label><br>
+  <input type="radio" id="male" name="gender" value="male"> Еркек <br>
+  <input type="radio" id="female" name="gender" value="female"> Әйел <br>
+  
+  <button type="submit"> Жіберу </button>
+</form>
+
+
+<form action="/submit_form" method="POST">
+  <label for="newsletter">Жаңалықтар таратылымына жазылу:</label>
+  <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+  
+  <button type="submit">Жіберу</button>
+</form>
+
+
+<form action="/submit_form" method="POST">
+  <label for="country">Еліңізді таңдаңыз:</label>
+  <select id="country" name="country">
+    <option value="kazakhstan">Қазақстан</option>
+    <option value="usa">АҚШ</option>
+    <option value="uk">Ұлыбритания</option>
+  </select>
+  
+  <button type="submit">Жіберу</button>
+</form>
+
+<form action="/submit_form" method="POST">
+  <label for="message">Хабарлама:</label><br>
+  <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+  
+  <button type="submit">Жіберу</button>
+</form>
+
+
+<form action="/submit_form" method="POST" style="background-color: lightblue; padding: 20px;">
+  <label for="name" style="font-weight: bold;"> Аты: </label>
+  <input type="text" id="name" name="username" required style="padding: 10px; margin: 10px;">
+  
+  <label for="email"> Электронды пошта: </label>
+  <input type="email" id="email" name="email" required style="padding: 10px; margin: 10px;">
+  
+  <button type="submit" style="background-color: green; color: white; padding: 10px;"> Жіберу </button>
+</form>
+
+
+<form action="/submit_form" method="POST">
+  <label for="name">Аты:</label>
+  <input type="text" id="name" name="username" required>
+  
+  <label for="email">Электронды пошта:</label>
+  <input type="email" id="email" name="email" required>
+  
+  <button type="submit">Жіберу</button>
+</form>
+

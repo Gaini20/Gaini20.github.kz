@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бағдарлама баспалдағы</title>
+  <link rel="stylesheet" href="ai.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="WebArt Studio Логотипі" class="logo">
+      <h1>Бағдарлама баспалдағы</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#lesson1" class="lesson-link" data-target="lesson1">1.1 Python-ға кіріспе. Орнату және жұмыс ортасы <span class="arrow">&#9654;</span></a></li>
+        <li><a href="#lesson2" class="lesson-link" data-target="lesson2">1.2 Енгізу және шығару функциялары<span class="arrow">&#9654;</span></a></li>
+        <li><a href="#lesson3" class="lesson-link" data-target="lesson3">1.3 Математикалық операциялар <span class="arrow">&#9654;</span></a></li>
+        <li><a href="#lesson4" class="lesson-link" data-target="lesson4">1.4 Математикалық операциялар <span class="arrow">&#9654;</span></a></li>
+        <li><a href="#lesson5" class="lesson-link" data-target="lesson5">1.5-1.6 Шартты операторлар <span class="arrow">&#9654;</span></a></li>
+        <li><a href="#lesson6" class="lesson-link" data-target="lesson6">1.7-1.8 Циклдер: for және while <span class="arrow">&#9654;</span></a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <section id="lesson1" class="lesson-content">
+        <h2>Python-ға кіріспе</h2>
+        <div class="button-container">
+          <button onclick="window.location.href='py.html';">Python орнату нұсқаулығы</button>
+        </div>
+        <p><h3>Python тілінің тарихы</h3></p>
+        <p>Python — бұл жоғары деңгейдегі, интерпретаторлы және объектіге бағытталған бағдарламалау тілі. Python тілі 1980-ші жылдары Гвидо ван Россум тарапынан Нидерландта жасалды. Алғашқы нұсқасы 1991 жылы шыққан, және ол қазіргі күнде ең танымал бағдарламалау тілдерінің бірі болып табылады.</p>
+
+        <p><h2>Python тілінің қолдану салалары</h2>
+            <li><strong>Веб-даму:</strong> Python тілінде веб-қосымшалар жасау үшін көптеген фреймворктер бар. Python-ның ең танымал веб-фреймворктері: Django, Flask.</li>
+            <li><strong>Мәліметтерді талдау және ғылыми есептеулер:</strong> Python ғылым мен техника саласында мәліметтерді талдау үшін кеңінен қолданылуда. Оның көптеген кітапханалары бар, мысалы: NumPy, Pandas, SciPy.</li>
+            <li><strong>Жасанды интеллект (AI) және машинамен оқыту:</strong> Python жасанды интеллект және машинамен оқыту саласында кеңінен қолданылады. Оның танымал кітапханалары мен фреймворктері: TensorFlow, Keras, Scikit-learn.</li>
+            <li><strong>Автоматтандыру:</strong> Python скрипттері жүйені автоматтандыру және файлдарды өңдеу сияқты тапсырмаларды жеңілдетеді. Оның қарапайым синтаксисі мен үлкен кітапханалары арқасында әртүрлі тапсырмаларды автоматтандыру өте ыңғайлы.</li>
+            <li><strong>Ойындар мен мультимедиа:</strong> Python тілі сондай-ақ ойындар жасау үшін де қолданылуы мүмкін. Python-да ойындар мен мультимедиялық қосымшалар жасауда пайдаланылатын кітапханалар: Pygame, PyOpenGL.</li>
+            <li><strong>Қолданбалы бағдарламалар мен GUI:</strong> Python тілі графикалық интерфейсі бар қосымшалар жасау үшін де пайдаланылады. Оған арналған кітапханалар: Tkinter, PyQt.</li>
+            <li><strong>Веб-скрапинг:</strong> Python веб-сайттардан деректерді шығарып алу (web scraping) үшін жиі қолданылады. Бұл үшін арнайы кітапханалар: BeautifulSoup, Selenium.</li>
+        </p>
+        
+        <h2>Python тілінің ерекшеліктері</h2>
+            <li><strong>Оқуға жеңілдігі және қарапайым синтаксис:</strong> Python-ның ең басты ерекшелігі оның қарапайым және түсінікті синтаксисі. Ол тілдің жаңа бастаушылар үшін қолайлы болуын қамтамасыз етеді. Мысалы, Python бағдарламалау тілінде бір жолдық кодпен көптеген есептерді шешуге болады.</li>
+            <li><strong>Кросс-платформалық қолдау:</strong> Python әртүрлі операциялық жүйелерде (Windows, macOS, Linux) жұмыс істей алады, бұл оның кең таралуына себеп болады.</li>
+            <li><strong>Қоғамдастық және кітапханалар:</strong> Python әлемдегі ең үлкен бағдарламалау тілдерінің бірі болып табылады, сондықтан оның кітапханалары мен құралдары өте көп. Сонымен қатар, Python-ның үлкен қоғамдастығы бар, ол жаңа бастаушылар мен тәжірибелі бағдарламашылар үшін үнемі көмек көрсетуге дайын.</li>
+            <li><strong>Көптеген кітапханалар мен фреймворктер:</strong> Python көптеген тапсырмаларды орындау үшін дайын кітапханалар мен фреймворктерге ие. Бұл веб-даму, мәліметтерді талдау, жасанды интеллект, ғылыми зерттеулер сияқты салаларда жұмыс істеуді айтарлықтай жеңілдетеді.</li>
+            <li><strong>Әртүрлі бағдарламалау парадигмаларының қолдауы:</strong> Python объектіге бағытталған, функционалды және процедуралық бағдарламалау тәсілдерін қолдайды. Бұл Python-ды әртүрлі бағдарламалық жобалар үшін қолдануға мүмкіндік береді.</li>
+            <li><strong>Интерпретаторлы тіл:</strong> Python интерпретаторлы тіл болып табылады, яғни Python кодын орындау үшін оны алдымен компиляциялаудың қажеті жоқ. Бұл оны жылдам тестілеу мен дамыту үшін өте ыңғайлы етеді.</li>
+
+        <p><h2>Python IDLE немесе IDE орнату және қолдану</h2></p>
+        <h3>IDLE: Python-ның стандартты интеграцияланған даму ортасы</h3>
+        <img src="44.png" alt="Image" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+        <p>IDLE (Integrated Development and Learning Environment) — Python-ның ресми IDE-і. Ол Python бағдарламаларын жазу, орындау және дебаг жасау үшін пайдалануға ыңғайлы құрал болып табылады. IDLE Python орнатылған кезде автоматты түрде орнатылады.</p>
+
+        <h3>IDLE пайдалану:</h3>
+        <ol>
+            <li><strong>IDLE іске қосу:</strong> Windows: Бастау мәзірінен IDLE (Python 3.x) деп жазып іздеңіз.</li>
+            <li><strong>Python кодын жазу:</strong> IDLE іске қосылғанда, Python Shell ашылады. <img src="45.png" alt="Image" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"><br>Мұнда Python командаларын тікелей теріп, олардың нәтижелерін көре аласыз. Мысалы, IDLE-ге келесі кодты енгізіп көріңіз: <code>print("Hello, Python!")</code></li>
+            <img src="46.png" alt="Image" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+            <li><strong>Python файлдарын жазу:</strong> File → New File мәзірін таңдап, жаңа Python скриптін жаза аласыз.<img src="47.png" alt="Image" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"><br> Кодты жазғаннан кейін, оны сақтау үшін File → Save As мәзірін таңдаңыз.</li>
+            <img src="48.png" alt="Image" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+            <li><strong>Кодты орындау:</strong> Файлды сақтап болғаннан кейін, оны іске қосу үшін Run → Run Module немесе F5 пернесін басыңыз.</li>
+            <img src="49.png" alt="Image" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+        </ol>
+
+        <h2>Python үшін басқа интеграцияланған даму орталары (IDE)</h2>
+            <li>PyCharm (IntelliJ)</li>
+            <li>Visual Studio Code (VS Code)</li>
+            <li>Jupyter Notebook</li>
+
+        <p><h2>IDE мен IDLE арасындағы айырмашылықтар</h2></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Қасиет</th>
+                    <th>IDLE</th>
+                    <th>PyCharm/VS Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Қолданушы интерфейсі</td>
+                    <td>Қарапайым, жаңа бастаушыларға ыңғайлы</td>
+                    <td>Күрделі, бірақ толық функционалды</td>
+                </tr>
+                <tr>
+                    <td>Қосымша мүмкіндіктер</td>
+                    <td>Код толықтыру, дебаг жасау қарапайым</td>
+                    <td>Кеңейтілген дебаггер, тестілеу, Git интеграциясы, кеңейтімдер</td>
+                </tr>
+                <tr>
+                    <td>Қолдану саласы</td>
+                    <td>Әдеттегі Python скрипттері үшін қолайлы</td>
+                    <td>Кәсіби даму, деректер ғылымы, веб-даму үшін тиімді</td>
+                </tr>
+                <tr>
+                    <td>Қолдану оңайлығы</td>
+                    <td>Жеңіл және интуитивті</td>
+                    <td>Күрделірек, бірақ өте көп мүмкіндіктерді ұсынады</td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
+
+      <section id="lesson2" class="lesson-content">
+        <h2>Енгізу және шығару функциялары</h2>
+        <h2>1. print() командасы</h2>
+        <p><strong>print()</strong> командасы Python тілінде мәтін немесе басқа деректерді экранға шығару үшін қолданылады.</p>
+        <p>Бұл команданы қолданып, біз пайдаланушыға ақпаратты көрсете аламыз.</p>
+
+        <div class="example">
+            <h3>Мысал 1:</h3>
+            <p>Қарапайым мәтін шығару:</p>
+            <code>print("Сәлем, әлем!")</code>
+        </div>
+
+        <div class="example">
+            <h3>Мысал 2:</h3>
+            <p>Өзгермелі мәндерді шығару:</p>
+            <code>x = 5</code>
+            <code>print("x мәні:", x)</code>
+        </div>
+
+        <h2>2. input() командасы</h2>
+        <p><strong>input()</strong> командасы пайдаланушыдан мәлімет алу үшін қолданылады. Бұл команда пайдаланушыдан мәлімет сұрағанда экранда сұрақ немесе мәтін көрсетеді, ал пайдаланушы жауап енгізген соң, ол мәнді бағдарламада пайдалану үшін қайтарады.</p>
+
+        <div class="example">
+            <h3>Мысал 3:</h3>
+            <p>Пайдаланушыдан аты-жөнін сұрау:</p>
+            <code>name = input("Атыңызды енгізіңіз: ")</code>
+            <code>print("Сәлем, " + name + "!")</code>
+        </div>
+
+        <div class="example">
+            <h3>Мысал 4:</h3>
+            <p>Пайдаланушыдан сан енгізу және оны қосу:</p>
+            <code>age = input("Жасыңыз нешеде? ")</code>
+            <code>print("Сіздің жасыңыз " + age + " жыл.")</code>
+        </div>
+
+        <h2>Командаларды бірге қолдану</h2>
+        <p>Кейде біз <strong>print()</strong> және <strong>input()</strong> командаларын бірге қолданамыз, мысалы, сұрақ қою және жауап шығару үшін.</p>
+
+        <div class="example">
+            <h3>Мысал 5:</h3>
+            <p>Пайдаланушының жасын сұрау және оны шығару:</p>
+            <code>age = input("Жасыңыз нешеде? ")</code>
+            <code>print("Сіздің жасыңыз " + age + " жыл.")</code>
+        </div>
+        <p>print() және input() командалары Python тілінің негізгі құралдарының бірі болып табылады. Оларды пайдалану арқылы біз деректерді экранға шығарып, пайдаланушыдан жауап ала аламыз.</p>
+
+        <div class="task">
+            <h3>Тапсырма 1:</h3>
+            <p>print() командасымен «Мен Python тілін үйреніп жатырмын!» деген хабарламаны шығарыңыз.</p>
+            <input type="text" id="task1" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer1()">Тексеру</button>
+            <div id="result1" class="result"></div>
+        </div>
+
+        <div class="task">
+            <h3>Тапсырма 2:</h3>
+            <p>input() командасымен пайдаланушыдан оның жасын сұраңыз және оған «Сіз 18 жастасыз!» деген хабарлама шығарыңыз.</p>
+            <input type="text" id="task2" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer2()">Тексеру</button>
+            <div id="result2" class="result"></div>
+        </div>
+
+       <div class="task">
+            <h3>Тапсырма 3:</h3>
+            <p>Келесі кодтың жауабы қандай?</p>
+            <p><code>print("Hello", "World", 123)</code></p>
+            <input type="text" id="task3" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer3()">Тексеру</button>
+            <div id="result3" class="result"></div>
+        </div>
+
+        <div class="task">
+            <h3>Тапсырма 4:</h3>
+            <p>Келесі кодтың жауабы қандай?</p>
+            <p><code>print("Python" + " is " + "awesome!")</code></p>
+            <input type="text" id="task4" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer4()">Тексеру</button>
+            <div id="result4" class="result"></div>
+        </div>
+
+        
+        <script>
+        function checkAnswer1() {
+            var userAnswer = document.getElementById("task1").value;
+            var correctAnswer = "print('Мен Python тілін үйреніп жатырмын!')";
+            var result = document.getElementById("result1");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        function checkAnswer2() {
+            var userAnswer = document.getElementById("task2").value;
+            var correctAnswer = "input('Жасыңыз нешеде? ')";
+            var result = document.getElementById("result2");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        function checkAnswer3() {
+            const userAnswer = document.getElementById("task3").value;
+            const correctAnswer = "Hello World 123";
+            const result = document.getElementById("result3");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        function checkAnswer4() {
+            const userAnswer = document.getElementById("task4").value;
+            const correctAnswer = "Python is awesome!";
+            const result = document.getElementById("result4");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+        </script>
+      </section>
+
+
+      <section id="lesson3" class="lesson-content">
+        <h2>Математикалық операциялар</h2>
+        <p>Python бағдарламалау тілінде математикалық операциялар кез келген сандық есептеулер мен аналитикалық тапсырмаларды шешу үшін қолданылады.</p>
+        <p><b>1. Арифметикалық операциялар</b><br>Python тілінде арифметикалық операциялар түрлі математикалық есептеулерді орындау үшін пайдаланылады. Python стандартты арифметикалық операцияларды орындауға арналған келесі операторларды ұсынады:</p>
+        <p><b>1.1. Қосу (+)</b><br>Қосу операциясы екі санды қосады.</p>
+        <pre>
+          <code>
+            a = 5
+            b = 3
+            c = a + b
+            print(c)  
+
+            # Нәтиже: 8
+          </code>
+        </pre>
+        <p><b>1.2. Азайту (-)</b><br>Азайту операциясы бірінші саннан екінші санды алады.</p>
+        <pre>
+          <code>
+            a = 5
+            b = 3
+            c = a - b
+            print(c)  
+
+            # Нәтиже: 2
+          </code>
+        </pre>
+        <p><b>1.3. Көбейту (*)</b><br>Көбейту операциясы екі санның көбейтіндісін береді.</p>
+        <pre>
+          <code>
+            a = 5
+            b = 3
+            c = a * b
+            print(c)  
+
+            # Нәтиже: 15
+          </code>
+        </pre>
+        <p><b>1.4. Бөлу (/)</b><br>Бөлу операциясы бірінші санды екінші санға бөледі және нәтижені нақты сан ретінде қайтарады.</p>
+        <pre>
+          <code>
+            a = 5
+            b = 3
+            c = a / b
+            print(c)
+            # Нәтиже: 1.6666666666666667
+          </code>
+        </pre>
+        <p><b>1.5. Бүтін санмен бөлу (//) </b><br>Бүтін санмен бөлу екі санды бөлу операциясын орындап, нәтижені бүтін сан ретінде қайтарады (қалдықсыз бөлу).</p>
+        <pre>
+          <code>
+            a = 5
+            b = 3
+            c = a // b
+            print(c)  
+            # Нәтиже: 1
+          </code>
+        </pre>
+        <p><b>1.6. Қалдықты алу (%)</b><br>Қалдықты алу операциясы — екі санды бөлгенде алынған қалдықты қайтарады.</p>
+        <pre>
+          <code>
+           a = 5
+           b = 3
+           c = a % b
+           print(c)  
+           # Нәтиже: 2
+          </code>
+        </pre>
+        <p><b>1.7. Дәрежелеу ()**</b><br>Дәрежелеу операциясы — бірінші санды екінші сан дәрежесіне көтеру.</p>
+        <pre>
+          <code>
+            a = 5
+            b = 3
+            c = a ** b
+            print(c)  
+            # Нәтиже: 125
+          </code>
+        </pre>
+        <p><b>2. Арифметикалық операцияларды қолдану мысалдары</b><br>Мысал 1: Қарапайым арифметикалық есептер<br>Пайдаланушыдан екі санды алып, оларды қосу, азайту, көбейту және бөлу.</p>
+        <pre>
+          <code>
+            a = float(input("Бірінші санды енгізіңіз: "))
+            b = float(input("Екінші санды енгізіңіз: "))
+
+            қосу = a + b
+            азайту = a - b
+            көбейту = a * b
+            бөлу = a / b
+
+            print("Қосу:", қосу)
+            print("Азайту:", азайту)
+            print("Көбейту:", көбейту)
+            print("Бөлу:", бөлу)
+          </code>
+        </pre>
+        <p>Бұл код пайдаланушыдан екі санды сұрайды және оларды әртүрлі операциялар арқылы өңдейді.</p>
+        <p><b>Мысал 2: Геометриялық есептер</b><br>Тік төртбұрыштың ауданы мен периметрін есептеу:</p>
+        <pre>
+          <code>
+            ұзындық = float(input("Тік төртбұрыштың ұзындығын енгізіңіз: "))
+            ендік = float(input("Тік төртбұрыштың енін енгізіңіз: "))
+
+            аудан = ұзындық * ендік
+            периметр = 2 * (ұзындық + ендік)
+
+            print("Аудан:", аудан)
+            print("Периметр:", периметр)
+          </code>
+        </pre>
+        <p>Бұл есепте геометриялық фигураның ауданын және периметрін есептеуге арналған.</p>
+        <p><b>Мысал 3: Арифметикалық орта есептеу</b><br>Бірнеше санның арифметикалық ортасын табу:</p>
+        <pre>
+          <code>
+            a = 5
+            b = 10
+            c = 15
+
+            орта = (a + b + c) / 3
+            print("Арифметикалық орта:", орта)
+          </code>
+        </pre>
+        <p>Бұл код үш санның арифметикалық орта мәнін есептейді.</p>
+        <p><b>3. Операциялармен жұмыс кезінде қателіктер мен ескертулер <br>0-ге бөлу:</b> Егер бөлінгіш нөлге бөлінсе, Python <b>ZeroDivisionError</b> қатесін береді.</p>
+        <pre>
+          <code>
+            a = 5
+            b = 0
+            c = a / b  # ZeroDivisionError
+          </code>
+        </pre>
+        <p><b>Қарапайым деректер типтері:</b> Python сандармен жұмыс істегенде int (бүтін сан) және float (негізгі сан) деректер типтерін пайдаланады.</p>
+        <p><b>4. Арифметикалық операцияларды қолданудағы ерекшеліктер<br>Жолдармен жұмыс:</b> Python-да сандармен ғана емес, жолдармен де арифметикалық операцияларды қолдануға болады. Мысалы, екі жолды біріктіру үшін + операциясы қолданылады:</p>
+        <pre>
+          <code>
+            жол1 = "Hello, "
+            жол2 = "world!"
+            біріктіру = жол1 + жол2
+            print(біріктіру)  
+
+            #Нәтиже: Hello, world!
+          </code>
+        </pre>
+        <p><b>Мәтіндермен операциялар:</b> Мәтіндерді көбейту арқылы қайталанатын жолдарды жасауға болады:</p>
+        <pre>
+          <code>
+            жол = "Python! "
+            нәтиже = жол * 3
+            print(нәтиже)  
+
+            # Нәтиже: Python! Python! Python!
+          </code>
+        </pre>
+
+        <div class="task">
+            <h3>Тапсырма 1:</h3>
+            <p>print() және input() командаларын бірге пайдаланып, пайдаланушыдан екі сан сұраңыз және олардың қосындысын экранға шығарыңыз.</p>
+            <input type="text" id="task1" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer1()">Тексеру</button>
+            <div id="result1" class="result"></div>
+        </div>
+
+        <div class="task">
+            <h3>Тапсырма 2:</h3>
+            <p>Пайдаланушыдан екі сан сұраңыз және олардың көбейтіндісін шығарыңыз.</p>
+            <input type="text" id="task2" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer2()">Тексеру</button>
+            <div id="result2" class="result"></div>
+        </div>
+
+        <div class="task">
+            <h3>Тапсырма 3:</h3>
+            <p>Сандарды қосу, азайту, көбейту және бөлу операцияларын бірге орындап, нәтижені шығарыңыз.</p>
+            <input type="text" id="task3" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer3()">Тексеру</button>
+            <div id="result3" class="result"></div>
+        </div>
+
+        <div class="task">
+            <h3>Тапсырма 4:</h3>
+            <p>Қалғанын (остаток) есептеңіз, яғни бір санды екіншіге бөлгенде қалғанды көрсетіңіз.</p>
+            <input type="text" id="task4" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer4()">Тексеру</button>
+            <div id="result4" class="result"></div>
+        </div>
+        <div class="task">
+            <h3>Тапсырма 5:</h3>
+            <p>Келесі кодтың жауабы қандай?</p>
+            <p><code>print(5 * 3 / 2)</code></p>
+            <input type="text" id="task5" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer5()">Тексеру</button>
+            <div id="result5" class="result"></div>
+        </div>
+
+        <div class="task">
+            <h3>Тапсырма 6:</h3>
+            <p>Келесі кодтың жауабы қандай?</p>
+            <p><code>a = 10</code></p>
+            <p><code>b = 20</code></p>
+            <p><code>print(a + b)</code></p>
+            <input type="text" id="task6" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer6()">Тексеру</button>
+            <div id="result6" class="result"></div>
+        </div>
+
+        <div class="task">
+            <h3>Тапсырма 7:</h3>
+            <p>Келесі кодтың жауабын жаз.</p>
+            <p><code>print(2 ** 3)</code></p>
+            <input type="text" id="task7" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer7()">Тексеру</button>
+            <div id="result5" class="result"></div>
+        </div>
+
+        <div class="task">
+            <h3>Тапсырма 8:</h3>
+            <p>Келесі кодты орындағаннан кейін нәтиже қандай болады?</p>
+            <p><code>print(10 // 3)</code></p>
+            <input type="text" id="task8" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer8()">Тексеру</button>
+            <div id="result8" class="result"></div>
+        </div>
+
+        <div class="task">
+            <h3>Тапсырма 9:</h3>
+            <p>Келесі кодтың жауабын жаз.</p>
+            <p><code>print(7 % 3)</code></p>
+            <input type="text" id="task9" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer9()">Тексеру</button>
+            <div id="result9" class="result"></div>
+        </div>
+      </section>
+
+    <script>
+
+        // Задача 3
+        function checkAnswer1() {
+            const userAnswer = document.getElementById("task1").value;
+            const correctAnswer = "print(int(input()) + int(input()))";
+            const result = document.getElementById("result1");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 4
+        function checkAnswer2() {
+            const userAnswer = document.getElementById("task2").value;
+            const correctAnswer = "print(int(input()) * int(input()))";
+            const result = document.getElementById("result2");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 5
+        function checkAnswer3() {
+            const userAnswer = document.getElementById("task3").value;
+            const correctAnswer = "print(int(input()) + int(input()), int(input()) - int(input()), int(input()) * int(input()), int(input()) / int(input()))";
+            const result = document.getElementById("result3");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 7
+        function checkAnswer4() {
+            const userAnswer = document.getElementById("task4").value;
+            const correctAnswer = "print(int(input()) % int(input()))";
+            const result = document.getElementById("result4");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+        // Задача 3
+        function checkAnswer5() {
+            const userAnswer = document.getElementById("task5").value;
+            const correctAnswer = "7.5";
+            const result = document.getElementById("result5");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 4
+        function checkAnswer6() {
+            const userAnswer = document.getElementById("task6").value;
+            const correctAnswer = "30";
+            const result = document.getElementById("result6");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 5
+        function checkAnswer7() {
+            const userAnswer = document.getElementById("task7").value;
+            const correctAnswer = "8";
+            const result = document.getElementById("result7");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 6
+        function checkAnswer8() {
+            const userAnswer = document.getElementById("task8").value;
+            const correctAnswer = "3";
+            const result = document.getElementById("result8");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 7
+        function checkAnswer9() {
+            const userAnswer = document.getElementById("task9").value;
+            const correctAnswer = "1";
+            const result = document.getElementById("result9");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+    </script>
+      <section id="lesson4" class="lesson-content">
+        <h2></h2>
+        
+        <p><b>Мысал 1: Қарапайым шығару</b></p>
+        <pre>
+          <code>
+            print("Сәлем, әлем!")
+
+            Нәтиже:
+            Сәлем, әлем!
+          </code>
+        </pre>
+        <p>Бұл мысалда жай ғана мәтін экранға шығарылады.</p>
+        <p><b>Мысал 2: Айнымалыны шығару</b></p>
+        <pre>
+          <code>
+            name = "Айдана"
+            print("Сәлем, " + name)
+
+            Нәтиже:
+            Сәлем, Айдана
+          </code>
+        </pre>
+        <p>Бұл мысалда Python айнымалыны шығару кезінде оның мәнін қолданады.</p>
+        <p><b>Мысал 3: Бірнеше мәндерді шығару</b><br>print() функциясында бірнеше мәнді бір уақытта шығару үшін оларды үтір арқылы бөлуге болады.</p>
+        <pre>
+          <code>
+            name = "Айдана"
+            age = 25
+            print("Аты:", name, "Жасы:", age)
+
+            Нәтиже:
+            Аты: Айдана Жасы: 25
+          </code>
+        </pre>
+        <p>Бұл жерде print() бірнеше айнымалыны бірден шығарады.</p>
+        <p><b>Мысал 4: Форматтау арқылы шығару</b><br>print() функциясының f-string (форматталған жол) мүмкіндігін пайдалану арқылы мәтіндерді форматтау өте оңай. Бұл тәсіл Python 3.6 нұсқасынан бастап қолжетімді.</p>
+        <pre>
+          <code>
+            name = "Айдана"
+            age = 25
+            print(f"Менің атым {name}, мен {age} жастамын.")
+
+            Нәтиже:
+            Менің атым Айдана, мен 25 жастамын.
+          </code>
+        </pre>
+        <p>Бұл тәсіл айнымалыларды мәтінге қосу үшін өте ыңғайлы.</p>
+        <p><b>Пайдаланушыдан мәлімет алу және шығару</b><br>Python бағдарламасында пайдаланушыдан деректер алу мен оларды шығару жиі кездесетін іс-әрекет болып табылады. Мысалы, пайдаланушыдан атын, жасын және басқа мәліметтерін алып, оларды экранға шығару.</p>
+        <p><b>Мысал 5: Пайдаланушыдан ақпарат алу және оны шығару</b></p>
+        <pre>
+          <code>
+            name = input("Атыңызды енгізіңіз: ")
+            age = int(input("Жасыңызды енгізіңіз: "))
+            print(f"Сәлем, {name}! Сіздің жасыңыз {age}.")
+
+            Нәтиже:
+            Атыңызды енгізіңіз: Айдана
+            Жасыңызды енгізіңіз: 25
+            Сәлем, Айдана! Сіздің жасыңыз 25.
+          </code>
+        </pre>
+        <p>Бұл мысалда пайдаланушыдан аты мен жасын сұрап, олардың мәндерін экранға шығару үшін input() және print() функциялары бірге қолданылған.</p>
+        <p><b>Пайдаланушыға есеп шығаруды ұсыну</b><br>Python тілінде арифметикалық есептеулерді де енгізу және шығару арқылы орындауға болады. Мысалы, екі санды қосып, нәтижесін экранға шығару.</p>
+        <p><b>Мысал 6: Екі санның қосындысын есептеу</b></p>
+        <pre>
+          <code>
+            num1 = float(input("Бірінші санды енгізіңіз: "))
+            num2 = float(input("Екінші санды енгізіңіз: "))
+            sum = num1 + num2
+            print(f"Екі санның қосындысы: {sum}")
+
+            Нәтиже:
+            Бірінші санды енгізіңіз: 5
+            Екінші санды енгізіңіз: 7
+            Екі санның қосындысы: 12.0
+          </code>
+        </pre>
+        <p>Бұл мысалда Python пайдаланушыдан екі санды алып, олардың қосындысын есептеп, нәтижесін экранға шығарады.</p>
+        <div class="task">
+            <h3>Тапсырма 1:</h3>
+            <p>Қарапайым енгізу мен шығару.</p>
+            <p>Пайдаланушыдан атын сұраңыз және оны экранға шығарыңыз.</p>
+            <input type="text" id="task1" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer1()">Тексеру</button>
+            <div id="result1" class="result"></div>
+        </div>
+        <div class="task">
+            <h3>Тапсырма 2:</h3>
+            <p>Екі санның қосындысын сұрау.</p>
+            <p>Қосындыны есептеу үшін екі санды сұраңыз және олардың қосындысын экранға шығарыңыз.</p>
+            <input type="text" id="task2" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer2()">Тексеру</button>
+            <div id="result2" class="result"></div>
+        </div>
+        <div class="task">
+            <h3>Тапсырма 3:</h3>
+            <p>Кодты аяқтаңыз. Қандай айнымалы қалып кетті?</p>
+            <p>Программада айнымалыларды дұрыс форматтау үшін қажет кодты жазыңыз.</p>
+            <p><code>name = "Айдана"</code><br><code>age = 25</code><br><code>_____</code></p> <!-- Ожидаемый форматированный вывод -->
+            <input type="text" id="task3" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer3()">Тексеру</button>
+            <div id="result3" class="result"></div>
+        </div>
+
+        <!-- Задача 2 -->
+        <div class="task">
+            <h3>Тапсырма 4:</h3>
+            <p>Кодты аяқтаңыз. Программа нәтиже көрсетеді. Қайсы айнымалылар өзгерді?</p>
+            <p><code>name = "Айдана"</code></p>
+            <p><code>age = 25</code></p>
+            <p><code>print(f"Менің атым {name}, мен {age} жастамын.")</code> <!-- Форматталған шығару --></p>
+            <input type="text" id="task4" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer4()">Тексеру</button>
+            <div id="result4" class="result"></div>
+        </div>
+
+        <!-- Задача 3 -->
+        <div class="task">
+            <h3>Тапсырма 5:</h3>
+            <p>Кодты жазыңыз және бірнеше айнымалыны шығарыңыз:</p>
+            <p><code>name = "Айдана"</code></p>
+            <p><code>age = 25</code></p>
+            <p><code>height = 1.75</code><br><code>_____</code> </p><!-- Ожидаемый вывод -->
+            <input type="text" id="task5" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer5()">Тексеру</button>
+            <div id="result5" class="result"></div>
+        </div>
+
+        <!-- Задача 4 -->
+        <div class="task">
+            <h3>Тапсырма 6:</h3>
+            <p>Программада бірнеше айнымалы мәнін шығарыңыз. Нәтижені форматтау үшін f-string қолдануды үйреніңіз:</p>
+            <p><code>name = "Айдана"</code><br><code>age = 25</code><br><code>height = 1.75</code><br><code>_____</code> <!-- Форматированный вывод --></p>
+            <input type="text" id="task6" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer6()">Тексеру</button>
+            <div id="result6" class="result"></div>
+        </div>
+
+        <!-- Задача 5 -->
+        <div class="task">
+            <h3>Тапсырма 7:</h3>
+            <p>Қандай нәтиже шығады, егер айнымалы мәні өзгертілсе?</p>
+            <p><code>name = "Айдана"</code></p>
+            <p><code>age = 25</code></p>
+            <p><code>print(f"Менің атым {name}, мен {age} жастамын.")</code></p>
+            <p>Енді жасыңызды өзгертсеңіз, нәтижені не болады?</p>
+            <input type="text" id="task7" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer7()">Тексеру</button>
+            <div id="result7" class="result"></div>
+        </div>
+        <p><h3>Жеке тапсырмалар</h3></p>
+         <div class="task">
+            <p>2 санының 5-ші дәрежесіне шығарыңыз.</p>
+            <p>Өзіңіз Python кодын жазып, нәтижені экранға шығарыңыз.</p>
+            <p><strong>Мысал:</strong> Егер сіз 2-ні 5-ке шығаратын болсаңыз, нәтиже: <strong>32</strong></p>
+        </div>
+
+        <!-- Задача 2: Целочисленное деление -->
+        <div class="task">
+            <p>Санды санға бөлгендегі бүтін бөлігін есептейтін программа кодын жаз.</p>
+            <p><strong>Мысал:</strong> Егер сіз 10-ды 3-ке бөлсеңіз, нәтиже: <strong>3</strong> (бүтін бөлік)</p>
+        </div>
+        
+        <!-- Задача 3: Деление с остатком -->
+        <div class="task">
+            <p>27 санын 5-ке бөліңіз және қалдығын (остаток) шығарыңыз.</p>
+            <p><strong>Мысал:</strong> Егер сіз 11-ді 4-ке бөлсеңіз, нәтиже: <strong>3</strong> және қалдық: <strong>3</strong></p>
+        </div>
+
+        <!-- Задача 4: Возведение в степень -->
+        <div class="task">
+            <p>3 санының 4-ші дәрежесіне шығарыңыз.</p>
+            <p><strong>Мысал:</strong> Егер сіз 6-ны 2-ге шығаратын болсаңыз, нәтиже: <strong>36</strong></p>
+        </div>
+
+        <!-- Задача 5: Деление с остатком -->
+        <div class="task">
+            <p>20 санын 6-ға бөліңіз және нәтижесін шығарыңыз. Сондай-ақ, қалдықты да көрсетіңіз.</p>
+            <p><strong>Мысал:</strong> Егер сіз 18-ны 5-ға бөлсеңіз, нәтиже: <strong>3</strong> және қалдық: <strong>3</strong></p>
+        </div>
+        <script>
+        // Задача 1
+        function checkAnswer1() {
+            const userAnswer = document.getElementById("task1").value;
+            const correctAnswer = 'name = input("Атыңызды енгізіңіз: ")\nprint("Сіз енгізген атыңыз:", name)';
+            const result = document.getElementById("result1");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+        function checkAnswer2() {
+            const userAnswer = document.getElementById("task2").value;
+            const correctAnswer = 'num1 = float(input("Бірінші санды енгізіңіз: "))\nnum2 = float(input("Екінші санды енгізіңіз: "))\nsum = num1 + num2\nprint("Екі санның қосындысы:", sum)';
+            const result = document.getElementById("result2");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+        function checkAnswer3() {
+            const userAnswer = document.getElementById("task3").value;
+            const correctAnswer = 'print("Менің атым", name, "мен", age, "жастамын.")';
+            const result = document.getElementById("result3");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 2
+        function checkAnswer4() {
+            const userAnswer = document.getElementById("task4").value;
+            const correctAnswer = 'print(f"Менің атым {name}, мен {age} жастамын.")';
+            const result = document.getElementById("result4");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 3
+        function checkAnswer5() {
+            const userAnswer = document.getElementById("task5").value;
+            const correctAnswer = 'print("Менің атым", name, "жасы:", age, "биіктігі:", height)';
+            const result = document.getElementById("result5");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 4
+        function checkAnswer6() {
+            const userAnswer = document.getElementById("task6").value;
+            const correctAnswer = 'print(f"Менің атым {name}, мен {age} жастамын, биіктігім {height}")';
+            const result = document.getElementById("result6");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 5
+        function checkAnswer7() {
+            const userAnswer = document.getElementById("task7").value;
+            const correctAnswer = 'age = 30\nprint(f"Менің атым {name}, мен {age} жастамын.")';
+            const result = document.getElementById("result7");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+    </script>
+      </section>
+
+      <section id="lesson5" class="lesson-content">
+        <h2>Шартты операторлар</h2>
+        <p>Шартты операторлар бағдарламалауда маңызды рөл атқарады, өйткені олар бағдарламаның әртүрлі жағдайларға жауап беру қабілетін қамтамасыз етеді. Python тілінде ең кең таралған шартты операторлар if, elif, және else конструкцияларымен жүзеге асады. Бұл операторлар бағдарламаның орындау бағытын шарттарға байланысты өзгертуге мүмкіндік береді.</p>
+        <p><b>1. if операторы</b><br>if операторы бағдарламаның белгілі бір бөлігі тек шарт орындалған жағдайда орындалатындығын анықтайды.</p>
+        <p><b>Синтаксис:</b></p>
+        <pre>
+          <code>
+            if шарт:
+               # шарт орындалған кезде орындалатын код
+          </code>
+        </pre>
+        <p>шарт — бұл шындық мәнін қайтарған кезде кодтың орындалатын шартты өрнек.<br>: — шарттың соңында қосу керек.<br>Код ішіндегі барлық операторлар дұрыс орындалу үшін тегістелген (indentation) болуы қажет.</p>
+        <p><b>Мысал 1: Қарапайым if операторы</b></p>
+        <pre>
+          <code>
+            age = 18
+            if age >= 18:
+               print("Сіз кәмелет жасқа толдыңыз.")
+
+            Нәтиже:
+            Сіз кәмелет жасқа толдыңыз.
+          </code>
+        </pre>
+        <p>Бұл мысалда жас 18-ге тең немесе үлкен болса, экранға хабарлама шығарылады.</p>
+        <p><b>Мысал 2: if операторымен басқа жағдай</b></p>
+        <pre>
+          <code>
+            number = 7
+            if number % 2 == 0:
+               print("Сан жұп.")
+
+            Нәтиже:
+            (Ешнәрсе шықпайды, өйткені 7 — тақ сан)
+          </code>
+        </pre>
+        <p>Бұл жағдайда, тек жұп сан болса ғана шарт орындалып, нәтиже шығарылады.</p>
+        <p><b>2. else операторы</b><br>else операторы if операторының шарт орындалмаған жағдайында орындалатын кодты анықтайды.</p>
+        <p><b>Синтаксис:</b></p>
+        <pre>
+          <code>
+            if шарт:
+               # шарт орындалған кезде орындалатын код
+            else:
+               # шарт орындалмаған кезде орындалатын код
+          </code>
+        </pre>
+        <p>else операторы міндетті түрде if операторының соңында орналасуы керек.</p>
+        <p><b>Мысал 1: if және else операторы</b></p>
+        <pre>
+          <code>
+           age = 16
+           if age >= 18:
+              print("Сіз кәмелет жасқа толдыңыз.")
+           else:
+              print("Сіз әлі кәмелет жасқа толмадыңыз.")
+
+           Нәтиже:
+           Сіз әлі кәмелет жасқа толмадыңыз.
+          </code>
+        </pre>
+        <p>Бұл мысалда else операторы шарт орындалмаған жағдайда орындалады.</p>
+        <p><b>Мысал 2: Сандарды салыстыру</b></p>
+        <pre>
+          <code>
+           number = 5
+           if number > 0:
+              print("Сан оң.")
+           else:
+              print("Сан теріс немесе нөл.")
+
+           Нәтиже:
+           Сан оң.
+          </code>
+        </pre>
+        <p><b>3. elif операторы</b><br>elif (else if) операторы бірнеше шартты тексеруге мүмкіндік береді. Бұл шарттардың біреуі орындалса, сәйкес блок іске қосылады. Бұл конструкция көп жағдайларды тексеру үшін пайдалы.</p>
+        <p><b>Синтаксис:</b></p>
+        <pre>
+          <code>
+            if шарт 1:
+               # шарт 1 орындалса орындалатын код
+            elif шарт 2:
+               # шарт 2 орындалса орындалатын код
+            else:
+               # барлық шарттар орындалмаса орындалатын код
+          </code>
+        </pre>
+        <p><b>Мысал 1: if, elif және else операторлары</b></p>
+        <pre>
+          <code>
+           age = 20
+
+           if age < 13:
+              print("Сіз балаңыз.")
+           elif age < 20:
+              print("Сіз жасөспірімсіз.")
+           else:
+              print("Сіз ересексіз.")
+
+           Нәтиже:
+           Сіз жасөспірімсіз
+          </code>
+        </pre>
+        <p>Бұл мысалда бірнеше шарт тексеріледі:<br>Егер жас 13-тен кіші болса, бала деп есептеледі.<br>Егер жас 13-20 жас аралығында болса, жасөспірім деп есептеледі.<br>Басқа жағдайда ересек деп саналады.</p>
+        <p><b>Мысал 2: Баллды тестілеу</b></p>
+        <pre>
+          <code>
+           bal = 85
+
+           if bal >= 90:
+              print("Жақсы!")
+           elif bal >= 75:
+              print("Қанағаттанарлық.")
+           else:
+              print("Қанағаттанарлықсыз.")
+
+           Нәтиже:
+           Қанағаттанарлық.
+          </code>
+        </pre>
+        <p>Бұл мысалда elif арқылы баллдың аралығын тексеріп, әртүрлі нәтижелер шығарылады.</p>
+        <p><b>4. Шартты операторлар қолдану жағдайлары<br>Мысал 1: Пайдаланушының таңдауын тексеру</b></p>
+        <pre>
+          <code>
+           tandau = input("Қайсысын таңдаңыз: 1, 2 немесе 3? ")
+
+           if tandau == "1":
+             print("Сіз бірінші опцияны таңдадыңыз.")
+           elif tandau == "2":
+             print("Сіз екінші опцияны таңдадыңыз.")
+           elif tandau == "3":
+             print("Сіз үшінші опцияны таңдадыңыз.")
+           else:
+             print("Жарамсыз таңдау!")
+          </code>
+        </pre>
+        <p>Бұл код пайдаланушыдан таңдау сұрап, оның негізінде шарттарды тексереді.</p>
+        <p><b>Мысал 2: Пайдаланушының енгізген мәнін тексеру</b></p>
+        <pre>
+          <code>
+           san = int(input("Сан енгізіңіз: "))
+
+           if san > 0:
+             print("Сан оң.")
+           elif san < 0:
+             print("Сан теріс.")
+           else:
+             print("Сан нөл.")
+          </code>
+        </pre>
+        <p>Бұл мысалда енгізілген санның оң, теріс немесе нөл екенін тексеріп, сәйкес нәтижені шығарамыз.</p>
+        <p>Python тілінде шартты операторлар бағдарламаның түрлі жағдайларға жауап беруін қамтамасыз етеді. if, elif, және else операторларының көмегімен әртүрлі шарттарды тексеріп, бағдарламаның орындау бағытын өзгертуге болады.<br><b>Негізгі қадамдар:</b><br>if операторы шартты тексереді және егер шарт дұрыс болса, код орындалады.<br>else операторы шарт дұрыс болмаса, орындалатын кодты анықтайды.<br>elif операторы бірнеше шартты тексеруге мүмкіндік береді.<br>Шартты операторлар — кез келген бағдарламаның негізгі құралы, ол қолданушының немесе бағдарламаның жағдайына байланысты әртүрлі әрекеттерді орындауға мүмкіндік береді.</p>
+
+        <div class="task">
+            <h3>Тапсырма 1:</h3>
+            <p>Пайдаланушыдан жасын сұраңыз. Егер жас 18 немесе одан жоғары болса, «Сіз ересексіз» деген хабарлама шығарыңыз, ал егер жас 18-ден кіші болса, «Сіз балаңыз» деп шығарыңыз.</p>
+            <input type="text" id="task1" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer1()">Тексеру</button>
+            <div id="result1" class="result"></div>
+        </div>
+
+        <!-- Задача 2 -->
+        <div class="task">
+            <h3>Тапсырма 2:</h3>
+            <p>Пайдаланушыдан сан енгізу сұралады. Егер сан жұп болса, «Жұп сан» деп шығарыңыз, ал егер тақ болса, «Тақ сан» деп шығарыңыз.</p>
+            <input type="text" id="task2" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer2()">Тексеру</button>
+            <div id="result2" class="result"></div>
+        </div>
+
+        <!-- Задача 3 -->
+        <div class="task">
+            <h3>Тапсырма 3:</h3>
+            <p>Үш сан енгізу сұралады. Егер барлық үш сан да оң болса, «Барлық сандар оң» деп шығарыңыз, ал егер бір немесе бірнеше сан теріс болса, «Кем дегенде бір сан теріс» деп шығарыңыз.</p>
+            <input type="text" id="task3" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer3()">Тексеру</button>
+            <div id="result3" class="result"></div>
+        </div>
+
+        <!-- Задача 4 -->
+        <div class="task">
+            <h3>Тапсырма 4:</h3>
+            <p>Пайдаланушыдан сан енгізу сұралады. Егер сан 10 мен 100 аралығында болса, «Сан 10 мен 100 арасында» деп шығарыңыз, ал егер сан 100-ден үлкен болса, «Сан 100-ден үлкен» деп шығарыңыз.</p>
+            <input type="text" id="task4" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer4()">Тексеру</button>
+            <div id="result4" class="result"></div>
+        </div>
+
+        <!-- Задача 5 -->
+        <div class="task">
+            <h3>Тапсырма 5:</h3>
+            <p>Екі сан енгізу сұралады. Егер бірінші сан екінші саннан үлкен болса, «Бірінші сан үлкен» деп шығарыңыз, ал егер бірінші сан екінші саннан кіші болса, «Екінші сан үлкен» деп шығарыңыз.</p>
+            <input type="text" id="task5" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer5()">Тексеру</button>
+            <div id="result5" class="result"></div>
+        </div>
+
+        <!-- Задача 6 -->
+        <div class="task">
+            <h3>Тапсырма 6:</h3>
+            <p>Пайдаланушыдан сан енгізу сұралады. Егер сан 0-ден үлкен болса, «Позитив сан» деп шығарыңыз, егер сан 0-ге тең болса, «Нөл» деп шығарыңыз, ал егер сан 0-ден кіші болса, «Негатив сан» деп шығарыңыз.</p>
+            <input type="text" id="task6" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer6()">Тексеру</button>
+            <div id="result6" class="result"></div>
+        </div>
+        <div class="task">
+            <h3>Жеке тапсырмалар:</h3>
+            <p>Пайдаланушыдан ауа температурасын сұраңыз және оның негізінде төмендегідей жауаптарды шығарыңыз:</p>
+            <ul>
+                <li>Егер температура 30°C-ден жоғары болса, "Бүгін өте ыстық!" деген хабарлама көрсетіңіз.</li>
+                <li>Егер температура 20°C пен 30°C аралығында болса, "Бүгін жылы ауа райы!" деген хабарлама көрсетіңіз.</li>
+                <li>Егер температура 10°C пен 20°C аралығында болса, "Бүгін салқын ауа райы!" деген хабарлама көрсетіңіз.</li>
+                <li>Егер температура 10°C-ден төмен болса, "Бүгін өте суық!" деген хабарлама көрсетіңіз.</li>
+            </ul>
+        </div>
+        <!-- Задача 1 -->
+        <div class="task">
+            <h3>Тұманның пайда болуы</h3>
+            <p>Егер температура 0°C-ден төмен болса және ауада ылғалдылық 90%-дан жоғары болса, онда тұман болады. Жазып беріңіз, егер осы шарттар орындалса, тұман пайда болады деп жазсын.</p>
+        </div>
+
+        <!-- Задача 2 -->
+        <div class="task">
+            <h3>Желдің пайда болуы</h3>
+            <p>Егер желдің жылдамдығы сағатына 5 м/с-ден жоғары болса, онда жел пайда болады. Желдің жылдамдығын сұрап, нәтижесін шығарыңыз.</p>
+        </div>
+
+        <!-- Задача 3 -->
+        <div class="task">
+            <h3>Бұрқасын</h3>
+            <p>Егер ауа температурасы -10°C-ден төмен болса және желдің жылдамдығы 10 м/с-ден жоғары болса, онда бұрқасын болады. Бұл шартты тексеріңіз.</p>
+        </div>
+
+        <!-- Задача 4 -->
+        <div class="task">
+            <h3>Қардың жаууы</h3>
+            <p>Қар жаууы үшін температура 0°C-ден төмен болуы керек. Егер температура -5°C болса, ол қар жауып тұрғанын көрсетсін.</p>
+        </div>
+
+        <!-- Задача 5 -->
+        <div class="task">
+            <h3>Климаттың өзгеруі</h3>
+            <p>Егер температура соңғы 10 жылда жылына 0.5°C-ге артып отырса, онда климат өзгеруде деп айтуға болады. Осы шартты қолдана отырып, климаттың өзгеруі туралы шешім шығарыңыз.</p>
+        </div>
+        <script>
+        // Задача 1
+        function checkAnswer1() {
+            const userAnswer = document.getElementById("task1").value;
+            const correctAnswer = 'age = int(input("Жасыңызды енгізіңіз: "))\nif age >= 18:\n    print("Сіз ересексіз")\nelse:\n    print("Сіз балаңыз")';
+            const result = document.getElementById("result1");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 2
+        function checkAnswer2() {
+            const userAnswer = document.getElementById("task2").value;
+            const correctAnswer = 'number = int(input("Санды енгізіңіз: "))\nif number % 2 == 0:\n    print("Жұп сан")\nelse:\n    print("Тақ сан")';
+            const result = document.getElementById("result2");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 3
+        function checkAnswer3() {
+            const userAnswer = document.getElementById("task3").value;
+            const correctAnswer = 'num1 = int(input("Бірінші санды енгізіңіз: "))\nnum2 = int(input("Екінші санды енгізіңіз: "))\nnum3 = int(input("Үшінші санды енгізіңіз: "))\nif num1 > 0 and num2 > 0 and num3 > 0:\n    print("Барлық сандар оң")\nelse:\n    print("Кем дегенде бір сан теріс")';
+            const result = document.getElementById("result3");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 4
+        function checkAnswer4() {
+            const userAnswer = document.getElementById("task4").value;
+            const correctAnswer = 'num = int(input("Сан енгізіңіз: "))\nif num >= 10 and num <= 100:\n    print("Сан 10 мен 100 арасында")\nelif num > 100:\n    print("Сан 100-ден үлкен")';
+            const result = document.getElementById("result4");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 5
+        function checkAnswer5() {
+            const userAnswer = document.getElementById("task5").value;
+            const correctAnswer = 'num1 = int(input("Бірінші санды енгізіңіз: "))\nnum2 = int(input("Екінші санды енгізіңіз: "))\nif num1 > num2:\n    print("Бірінші сан үлкен")\nelse:\n    print("Екінші сан үлкен")';
+            const result = document.getElementById("result5");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 6
+        function checkAnswer6() {
+            const userAnswer = document.getElementById("task6").value;
+            const correctAnswer = 'num = int(input("Санды енгізіңіз: "))\nif num > 0:\n    print("Позитив сан")\nelif num == 0:\n    print("Нөл")\nelse:\n    print("Негатив сан")';
+            const result = document.getElementById("result6");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+    </script>
+      </section>
+
+      <section id="lesson6" class="lesson-content">
+        <h2>Циклдер: for және while</h2>
+        <p>Циклдер — бұл белгілі бір шарт орындалғанша немесе бірнеше рет қайталанатын әрекеттерді орындауға мүмкіндік беретін бағдарламалау құрылымдары. Python тілінде циклдер өте маңызды құрал болып табылады, өйткені олар бағдарламаларды қысқартуға, тиімдірек жазуға және көп мәліметтермен жұмыс істегенде уақытты үнемдеуге мүмкіндік береді. Бұл бөлімде for және while циклдерінің қалай жұмыс істейтінін, олардың қолдану тәсілдерін қарастырамыз.</p>
+        <p><b>1. for циклі</b><br>for циклі — Python-дағы ең кең тараған циклдердің бірі, ол белгілі бір элементтер тізімін немесе диапазонды айналып өтеді. for циклі арқылы тізімдер, кортеждер, жолдар және диапазондар сияқты деректер құрылымдарын оңай өңдеуге болады.<br><b>Синтаксис:</b></p>
+        <pre>
+          <code>
+            for айнымалы in деректер:
+               #Кодтың орындалатын бөлігі
+          </code>
+        </pre>
+        <p><b>айнымалы</b> — әрбір айналымда деректер құрылымының элементіне сілтеме жасайды.<br><b>деректер </b>— циклдің қайталанатын элементтері бар деректер құрылымы.</p>
+        <p><b>Мысал 1: for циклінің қарапайым қолданылуы</b></p>
+        <pre>
+          <code>
+            for i in range(5):  #0-ден 4-ке дейінгі сандарды аламыз
+              print(i)
+          </code>
+        </pre>
+        <p>Нәтиже:<br>0<br>1<br>2<br>3<br>4</p>
+        <p>Бұл мысалда range(5) функциясы 0-ден 4-ке дейінгі сандарды тізіп, for циклі оларды кезекпен шығарады.</p>
+        <p><b>Мысал 2: Тізімдегі элементтерді өңдеу</b></p>
+        <pre>
+          <code>
+            zhemister = ["Алма", "Алмұрт", "Банан"]
+            for zhemis in zhemister:
+               print(zhemis)
+          </code>
+        </pre>
+        <p>Нәтиже:<br>Алма<br>Алмұрт<br>Банан</p>
+        <p>Бұл мысалда for циклі тізімдегі әрбір элементті алады және оны басып шығарады.</p>
+        <p><b>Мысал 3: Диапазонды қолдану</b><br>range() функциясы белгілі бір диапазонда сандарды генерациялау үшін қолданылады.</p>
+        <pre>
+          <code>
+            for i in range(1, 10, 2):  #1-ден 9-ға дейінгі тақ сандарды басып шығару
+               print(i)
+          </code>
+        </pre>
+        <p>Нәтиже:<br>1<br>3<br>5<br>7<br>9</p>
+        <p>range(1, 10, 2) — 1-ден бастап 10-ға дейін, қадам 2 болатын сандарды тізіп шығады.</p>
+        <p><b>Мысал 4: Веб-беттегі әріптерді санау</b></p>
+        <pre>
+          <code>
+            soz = "Python"
+            for arip in soz:
+               print(arip)
+          </code>
+        </pre>
+        <p>Нәтиже:<br>P<br>y<br>t<br>h<br>o<br>n</p>
+        <p>Бұл мысалда for циклі арқылы әріптерді бөліп шығарады.</p>
+        <p><b>2. while циклі</b><br>while циклі белгілі бір шарт орындалғанша әрекеттерді қайталауға мүмкіндік береді. Бұл цикл алдымен шартты тексереді, содан кейін ғана әрекеттер орындалады. Егер шарт дұрыс болса, цикл қайтадан орындалады.</p>
+        <p><b>Синтаксис:</b></p>
+        <pre>
+          <code>
+            while шарт:
+              #Кодтың орындалатын бөлігі
+          </code>
+        </pre>
+        <p>Шарт — бұл циклдің орындалуы үшін қажетті логикалық шарт.<br>Циклдің ішінде шарт қанағаттанарлық болса, оның денесі орындала береді.</p>
+        <p><b>Мысал 1: while циклімен санау</b></p>
+        <pre>
+          <code>
+            i = 0
+            while i < 5:
+              print(i)
+              i += 1   # i мәнін 1-ге арттыру
+          </code>
+        </pre>
+        <p>Нәтиже:<br>0<br>1<br>2<br>3<br>4</p>
+        <p>Бұл мысалда while циклі i < 5 шарты дұрыс болғанда орындалады, және i әр қайталануда 1-ге ұлғаяды.</p>
+        <p><b>Мысал 2: Шартты қанағаттандырғанша қайталау</b></p>
+        <pre>
+          <code>
+            number = int(input("Сіз қанша жасқа толдыңыз? "))
+            while number < 18:
+              print("Сіз әлі кәмелет жасқа толмағансыз.")
+              number = int(input("Жасыңызды қайта енгізіңіз: "))
+            print("Сіз кәмелет жасқа толдыңыз.")
+          </code>
+        </pre>
+        <p>Бұл мысалда while циклі 18 жасқа толмаған жағдайда қайта сұрақ қойып, жасы 18-ден асқан кезде цикл тоқтайды.</p>
+        <p><b>Мысал 3: Шексіз цикл</b></p>
+        <pre>
+          <code>
+            while True:
+              response = input("Шығу үшін 'exit' деп жазыңыз: ")
+              if response == "exit":
+                 break
+              else:
+                 print("Сіз жазғаныңыз:", response)
+          </code>
+        </pre>
+        <p>Бұл мысал шексіз цикл құрады және пайдаланушы exit деп жазғанша сұрақ қоя береді.</p>
+        <p><b>3. Циклдермен жұмыс істегенде қателіктерді болдырмау</b><br>Шексіз циклдардан аулақ болу: Егер шарт ешқашан орындалмаса немесе циклдың шартын жаңарту ұмытылса, онда шексіз цикл болады. Мысалы, while True циклін қателіксіз аяқтау үшін break операторын қолдану қажет.<br><b>Цикл ішінде айнымалының мәнін өзгерту:</b> Циклдың шартын әр қайталанғанда дұрыс тексеру үшін, айнымалының мәнін өзгерту керек. Мысалы, i += 1 немесе i = i + 1 сияқты өзгерістер.</p>
+        <p><b>4. Циклдармен қолданылатын қосымша операторлар<br>break операторы</b><br>break операторы циклді тоқтату үшін қолданылады. Циклдың шартын орындауға болмайтын жағдайда немесе арнайы жағдайларда циклды аяқтауға болады. Мысалы:</p>
+        <pre>
+          <code>
+            for i in range(10):
+              if i == 5:
+                break  # 5 болған кезде цикл тоқтайды
+              print(i)
+          </code>
+        </pre>
+        <p>Нәтиже:<br>0<br>1<br>2<br>3<br>4</p>
+        <p><b>continue операторы</b><br>continue операторы циклдің келесі итерациясына өту үшін қолданылады. Бұл оператор сол кезеңдегі кодтың қалған бөлігін өткізіп, келесі қайталануға өтеді. Мысалы:</p>
+        <pre>
+          <code>
+            for i in range(5):
+              if i == 3:
+                continue  # 3 болған кезде цикл тоқтайды
+              print(i)
+          </code>
+        </pre>
+        <p>Нәтиже:<br>0<br>1<br>2<br>4</p>
+        <p>Циклдер бағдарламалауда қайталанатын тапсырмаларды орындауға мүмкіндік береді. Python тілінде for және while циклдері өте пайдалы құралдар болып табылады.<br>for циклі белгілі бір элементтер тізімін немесе диапазонды айналып өту үшін қолданылса, while циклі шарт орындалғанша қайталанатын әрекеттер үшін пайдаланылады.<br>break және continue операторлары циклдармен жұмыс істегенде арнайы жағдайлар мен басқаруды тиімді ету үшін пайдаланылады.</p>
+        <div class="task">
+            <h3>Тапсырма 1:</h3>
+            <p>Қарапайым цикл. 1-ден 5-ке дейінгі сандарды шығарыңыз.</p>
+            <p>Python кодын жазыңыз, ол 1-ден 5-ке дейін сандарды экранға шығарады.</p>
+            <input type="text" id="task1" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer1()">Тексеру</button>
+            <div id="result1" class="result"></div>
+        </div>
+
+        <!-- Задача 2: Цикл while -->
+        <div class="task">
+            <h3>Тапсырма 2:</h3>
+            <p>while циклының көмегімен 10-нан 1-ге дейінгі сандарды шығарыңыз.</p>
+            <p>Python кодын жазыңыз, ол 10-нан 1-ге дейінгі сандарды шығарады.</p>
+            <input type="text" id="task2" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer2()">Тексеру</button>
+            <div id="result2" class="result"></div>
+        </div>
+
+        <!-- Задача 3: Цикл for с диапазоном -->
+        <div class="task">
+            <h3>Тапсырма 3:</h3>
+            <p>for циклы арқылы 1-ден 100-ге дейінгі барлық жұп сандарды шығарыңыз.</p>
+            <input type="text" id="task3" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer3()">Тексеру</button>
+            <div id="result3" class="result"></div>
+        </div>
+
+        <!-- Задача 4: Цикл while с условием -->
+        <div class="task">
+            <h3>Тапсырма 4:</h3>
+            <p>while циклы арқылы пайдаланушыдан сан сұраңыз және сан теріс болғанша сұрауды жалғастырыңыз.</p>
+            <input type="text" id="task4" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer4()">Тексеру</button>
+            <div id="result4" class="result"></div>
+        </div>
+
+        <!-- Задача 5: Цикл for с шагом -->
+        <div class="task">
+            <h3>Тапсырма 5:</h3>
+            <p>for циклы арқылы 0-ден 20-ға дейінгі тақ сандарды шығарыңыз.</p>
+            <input type="text" id="task5" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer5()">Тексеру</button>
+            <div id="result5" class="result"></div>
+        </div>
+
+        <!-- Задача 6: Цикл for с вычислениями -->
+        <div class="task">
+            <h3>Тапсырма 6:</h3>
+            <p>1-ден 10-ға дейінгі сандардың квадратының қосындысын есептеңіз.</p>
+            <input type="text" id="task6" placeholder="Жауабыңызды енгізіңіз">
+            <button onclick="checkAnswer6()">Тексеру</button>
+            <div id="result6" class="result"></div>
+        </div>
+        <script>
+        // Задача 1
+        function checkAnswer1() {
+            const userAnswer = document.getElementById("task1").value;
+            const correctAnswer = 'for i in range(1, 6):\n    print(i)';
+            const result = document.getElementById("result1");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 2
+        function checkAnswer2() {
+            const userAnswer = document.getElementById("task2").value;
+            const correctAnswer = 'i = 10\nwhile i >= 1:\n    print(i)\n    i -= 1';
+            const result = document.getElementById("result2");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 3
+        function checkAnswer3() {
+            const userAnswer = document.getElementById("task3").value;
+            const correctAnswer = 'for i in range(2, 101, 2):\n    print(i)';
+            const result = document.getElementById("result3");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 4
+        function checkAnswer4() {
+            const userAnswer = document.getElementById("task4").value;
+            const correctAnswer = 'while True:\n    num = int(input("Сан енгізіңіз: "))\n    if num < 0:\n        break\n    print("Сіз енгізген сан:", num)';
+            const result = document.getElementById("result4");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 5
+        function checkAnswer5() {
+            const userAnswer = document.getElementById("task5").value;
+            const correctAnswer = 'for i in range(1, 21, 2):\n    print(i)';
+            const result = document.getElementById("result5");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+
+        // Задача 6
+        function checkAnswer6() {
+            const userAnswer = document.getElementById("task6").value;
+            const correctAnswer = 'sum = 0\nfor i in range(1, 11):\n    sum += i ** 2\nprint("Квадраттардың қосындысы:", sum)';
+            const result = document.getElementById("result6");
+            if (userAnswer.trim() === correctAnswer) {
+                result.innerHTML = "Дұрыс жауап!";
+                result.className = "result correct";
+            } else {
+                result.innerHTML = "Қате жауап. Дұрыс жауап: " + correctAnswer;
+                result.className = "result incorrect";
+            }
+        }
+    </script>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.lesson-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        const target = e.target.getAttribute('data-target');
+        document.querySelectorAll('.lesson-content').forEach(content => {
+          content.style.display = 'none'; // Hide all sections
+        });
+        document.getElementById(target).style.display = 'block'; // Show clicked section
+        document.querySelectorAll('.arrow').forEach(arrow => {
+          arrow.innerHTML = '&#9654;'; // Reset arrow to point right
+        });
+        e.target.querySelector('.arrow').innerHTML = '&#9660;'; // Change arrow to down for active section
+      });
+    });
+
+    // Initially display the first lesson
+    document.getElementById('lesson1').style.display = 'block';
+  </script>
+</body>
+</html>
