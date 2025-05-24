@@ -646,22 +646,27 @@
   </div>
 
   <script>
-    document.querySelectorAll('.lesson-link').forEach(link => {
-      link.addEventListener('click', (e) => {
-        const target = e.target.getAttribute('data-target');
-        document.querySelectorAll('.lesson-content').forEach(content => {
-          content.style.display = 'none'; // Hide all sections
-        });
-        document.getElementById(target).style.display = 'block'; // Show clicked section
-        document.querySelectorAll('.arrow').forEach(arrow => {
-          arrow.innerHTML = '&#9654;'; // Reset arrow to point right
-        });
-        e.target.querySelector('.arrow').innerHTML = '&#9660;'; // Change arrow to down for active section
+  document.querySelectorAll('.lesson-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault(); // Останавливаем стандартное поведение якоря
+      const target = e.currentTarget.getAttribute('data-target');
+      document.querySelectorAll('.lesson-content').forEach(content => {
+        content.style.display = 'none'; // Скрыть все разделы
       });
+      document.getElementById(target).style.display = 'block'; // Показать нужный раздел
+      document.querySelectorAll('.arrow').forEach(arrow => {
+        arrow.innerHTML = '&#9654;'; // Стрелка вправо
+      });
+      e.currentTarget.querySelector('.arrow').innerHTML = '&#9660;'; // Активная стрелка вниз
     });
+  });
 
-    // Initially display the first lesson
-    document.getElementById('lesson1').style.display = 'block';
-  </script>
+  // Показываем первый раздел при загрузке
+  document.querySelectorAll('.lesson-content').forEach(content => {
+    content.style.display = 'none';
+  });
+  document.getElementById('lesson1').style.display = 'block';
+</script>
+
 </body>
 </html>
