@@ -399,6 +399,22 @@
         <li>Қаріп параметрлері арқылы мәтіннің түрін, көлемін, түсін және басқа қасиеттерін реттеу.</li>
         <li>Тізімдер арқылы ақпаратты түсінікті және құрылымды түрде ұсыну.</li>
       </section>
+      <script>
+        document.querySelectorAll('.lesson-link').forEach(link => {
+          link.addEventListener('click', (e) => {
+            const target = e.target.getAttribute('data-target');
+            document.querySelectorAll('.lesson-content').forEach(content => {
+              content.style.display = 'none'; // Hide all sections
+            });
+            document.getElementById(target).style.display = 'block'; // Show clicked section
+            document.querySelectorAll('.arrow').forEach(arrow => {
+              arrow.innerHTML = '&#9654;'; // Reset arrow to point right
+            });
+            e.target.querySelector('.arrow').innerHTML = '&#9660;'; // Change arrow to down for active section
+          });
+        });
+        document.getElementById('lesson1').style.display = 'block';
+      </script>
     </div>
   </div>
 </body>
