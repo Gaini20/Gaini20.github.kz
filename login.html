@@ -11,7 +11,7 @@
     <header>
         <div class="container">
             <h1>Кіру</h1>
-            <form action="courses.html" method="POST">
+            <form onsubmit="return loginCheck();">
                 <label for="username">Логин:</label>
                 <input type="text" id="username" name="username" required>
 
@@ -24,5 +24,25 @@
         </div>
     </header>
 
+    <script>
+        function loginCheck() {
+            const username = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            // Орнатылған логин мен құпиясөз (мысалы үшін)
+            const validUsername = "admin";
+            const validPassword = "12345";
+
+            if (username === validUsername && password === validPassword) {
+                window.location.href = "courses.html";
+            } else {
+                alert("Қате логин немесе құпиясөз.");
+            }
+
+            return false; // Форма сабмит болмайды
+        }
+    </script>
+
 </body>
 </html>
+
